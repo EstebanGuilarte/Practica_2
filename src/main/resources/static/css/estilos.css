@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+    background-color: #0033cc;
+    color: white;
+}
+
+h2{
+    text-align: center;
+    color: black;
+}
+
+h3{
+    text-align: center;
+    color: black;
+}
+
+#titulos{
+    text-align: center;
+    background-color: #0033cc;
+    color: white;
+}
+
+header h3{
+    text-align: center;
+    background-color: gold;
+    color: #0033cc;
+}

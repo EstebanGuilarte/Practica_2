@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Universidad Fidélitas</title>
+        <meta charset="UTF-8"><link href="css/menu.css" rel="stylesheet" type="text/css"/>
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <a class="logo nav-link" href="index.html">Universidad Fidélitas</a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="sobreNosotros.html">Nosotros</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="carrerasDisponibles.html">Carreras</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="beneficios.html">Beneficios</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="comunicadosOficiales.html">Comunicados</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="estudiantes.html">Estudiantes</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="cuerpoDocente.html">Profesores</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h2 id="titulos">¡Llena el formulario!</h2>
+            <article>
+                <header><h3>¡Ingresa la información correspondiente!</h3></header>
+                <form action="/cliente/ingresar" method="post">
+                    <input type="hidden" name="id" value="AB-450">
+                    <br>
+                    <fieldset>
+                        <label>Nombre completo:</label>
+                        <input 
+                            type="text" 
+                            name="nombre" 
+                            placeholder="Primer Apellido | Segundo Apellido | Nombre"
+                            size="60">
+                    </fieldset>
+                    <br>
+                    <fieldset>                        
+                        <label>Edad:</label>
+                        <input 
+                            type="number" 
+                            name="edad"
+                            min="18"
+                            max="65">
+                    </fieldset>
+                    <br>
+                    <fieldset>                        
+                        <label>Interesado en: </label>
+                        Técnicos<input 
+                            type="checkbox" 
+                            name="tecnicos">
+                        Bachilleratos <input 
+                            type="checkbox" 
+                            name="bachilleratos">
+                        Licenciaturas <input 
+                            type="checkbox" 
+                            name="licenciaturas">
+                        Maestrias <input 
+                            type="checkbox" 
+                            name="maestrias">
+                    </fieldset>
+                    <br>
+                    <fieldset>                        
+                        <label>Horario a convenir: </label>
+                        <input 
+                            type="radio" 
+                            name="horario"
+                            value="presencial"> Presencial
+                        <input 
+                            type="radio" 
+                            name="horario"
+                            value="virtual"> Virtual 
+                        <input 
+                            type="radio" 
+                            name="horario"
+                            value="bimodal"> Bimodal 
+                    </fieldset>
+                    <br>
+                    <div align="center">
+                        <input type="submit" value="Enviar" name="enviar"/>
+                </form>
+                <br>
+                <footer><small>¡Te estarán contactando en breve!</small></footer>
+                </div>
+            </article>
+        </section>
+    </body>
+</html>
